@@ -7,6 +7,8 @@ A node.js cli app generator for [Yeoman](http://yeoman.io).
 * no gulp
 * creates markdown files
 
+This is a improved version of [https://github.com/walidsa3d/generator-nodecli](https://github.com/walidsa3d/generator-nodecli)
+
 ### Install
 
 To install from npm, run:
