@@ -41,8 +41,9 @@
     "postversion": "git push && git push --tags && git push"
   },
   "dependencies": {
-    "yeoman-generator": "~0.24.1",
-    "git-config": "0.0.7"
+    "git-config": "0.0.7",
+    "html-wiring": "^1.2.0",
+    "yeoman-generator": "~0.24.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
