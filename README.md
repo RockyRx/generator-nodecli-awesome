@@ -1,11 +1,11 @@
-# generator-nodecli
+# generator-nodecli-awesome
 
 A node.js cli app generator for [Yeoman](http://yeoman.io).
 
 * pure mocha tests
 * no grunt
 * no gulp
-* creates markdown files
+* creates man pages from markdown files
 
 This is a improved version of [https://github.com/walidsa3d/generator-nodecli](https://github.com/walidsa3d/generator-nodecli)
 
