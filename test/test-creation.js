@@ -27,7 +27,6 @@ describe.skip('nodejs generator', function () {
       '.jshintrc',
       '.travis.yml',
       ['package.json', /"name": "mymodule"/],
-      ['Gruntfile.js', /!node_modules/],
       'README.md',
       'LICENSE'
     ];
@@ -36,7 +35,7 @@ describe.skip('nodejs generator', function () {
       'moduleName': 'mymodule',
       'moduleDesc': 'awesome module',
       'keywords': 'something',
-      'useGrunt': true,
+      'useGrunt': false,
       'testFramework': 'mocha',
       'assertionLibrary': 'expect.js',
       'githubName': 'octocat',
