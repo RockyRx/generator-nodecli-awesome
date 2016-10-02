@@ -1,7 +1,7 @@
 {
   "name": "generator-nodecli-awesome",
   "version": "1.3.0",
-  "description": "A Yeoman generator for nodejs modules",
+  "description": "A improved Yeoman generator for nodejs cli modules",
   "keywords": [
     "yeoman-generator",
     "mocha",
