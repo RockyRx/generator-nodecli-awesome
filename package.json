@@ -8,15 +8,11 @@
     "yeoman",
     "generator",
     "node.js",
-    "nodejs",
+    "cli",
     "node",
-    "grunt",
-    "grunt-mocha",
-    "yo",
-    "module",
-    "modules"
+    "yo"
   ],
-  "homepage": "https://github.com/sebs/generator-nodecli-awesomei",
+  "homepage": "https://github.com/sebs/generator-nodecli-awesome",
   "bugs": "https://github.com/sebs/generator-nodecli-awesome/issues",
   "author": {
     "name": "Sebastian Schürmann",
