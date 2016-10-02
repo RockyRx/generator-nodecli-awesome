@@ -3,21 +3,18 @@ var util = require('util')
 var path = require('path')
 var yeoman = require('yeoman-generator')
 var gitconfig = require('git-config')
-var readFileAsString = require("html-wiring").readFileAsString;
-
-var GeneratorBase = require('yeoman-generator').Base;
 
 var NodejsGenerator = module.exports = function NodejsGenerator (args, options, config) {
-  GeneratorBase.apply(this, arguments)
+  yeoman.generators.Base.apply(this, arguments)
 
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install']})
   })
 
-  this.pkg = JSON.parse(readFileAsString(path.join(__dirname, '../package.json')))
+  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')))
 }
 
-util.inherits(NodejsGenerator, GeneratorBase)
+util.inherits(NodejsGenerator, yeoman.generators.Base)
 
 NodejsGenerator.prototype.askFor = function askFor () {
   var cb = this.async()
