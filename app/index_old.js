@@ -37,20 +37,11 @@ NodejsGenerator.prototype.askFor = function askFor () {
       message: 'Module description'
     },
     {
-      type: 'input',
+      type: 'array',
       name: 'keywords',
       message: 'Module keywords',
       filter: function (value) {
-        if (typeof value === 'string') {
-          value = value.split(',')
-        }
-        return value
-          .map(function (val) {
-            return val.trim()
-          })
-          .filter(function (val) {
-            return val.length > 0
-          })
+        return [];
       }
     },
     {
@@ -78,7 +69,7 @@ NodejsGenerator.prototype.askFor = function askFor () {
     this.moduleName = this._.slugify(props.moduleName)
     this.moduleVarName = this._.camelize(props.moduleName)
     this.moduleDesc = props.moduleDesc
-    this.keywords = props.keywords
+    this.keywords = [];
     this.githubName = props.githubName
     this.author = props.author
     this.cliName = props.cliName

@@ -46,16 +46,7 @@ module.exports = generators.Base.extend({
           name: 'keywords',
           message: 'Module keywords',
           filter: function (value) {
-            if (typeof value === 'string') {
-              value = value.split(',')
-            }
-            return value
-              .map(function (val) {
-                return val.trim()
-              })
-              .filter(function (val) {
-                return val.length > 0
-              })
+            return [];
           }
         },
         {
