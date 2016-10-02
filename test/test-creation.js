@@ -2,7 +2,7 @@
 'use strict';
 
 var path    = require('path');
-var helpers = require('yeoman-generator').test;
+var helpers = require('yeoman-test');
 
 describe.skip('nodejs generator', function () {
   var tempPath = path.join(__dirname, '..', 'temp');
