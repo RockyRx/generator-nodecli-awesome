@@ -1,6 +1,6 @@
 {
   "name": "generator-nodecli-awesome",
-  "version": "2.2.0",
+  "version": "2.2.0-beta",
   "description": "A improved Yeoman generator for nodejs cli modules",
   "keywords": [
     "yeoman-generator",
@@ -46,6 +46,7 @@
   "dependencies": {
     "git-config": "0.0.7",
     "html-wiring": "^1.2.0",
+    "underscore.string": "^3.3.4",
     "yeoman-generator": "~0.24.1"
   },
   "devDependencies": {
