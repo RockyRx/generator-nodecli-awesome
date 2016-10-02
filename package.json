@@ -38,7 +38,7 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha",
-    "postversion": "git push && git push --tags && npm run changelog && git push"
+    "postversion": "git push && git push --tags && git push"
   },
   "dependencies": {
     "yeoman-generator": "~0.16.0",
