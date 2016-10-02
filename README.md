@@ -14,13 +14,13 @@ This is a improved version of [https://github.com/walidsa3d/generator-nodecli](h
 To install from npm, run:
 
 ```
-$ npm install -g generator-nodecli
+$ npm install -g generator-nodecli-awesome
 ```
 ### Usage
 Initiate the generator:
 
 ```
-$ yo nodecli
+$ yo nodecli-awesome
 ```
 This generator will install the following files:
 
