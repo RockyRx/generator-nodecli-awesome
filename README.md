@@ -1,5 +1,9 @@
 # generator-nodecli-awesome
 
+[![npm version](https://badge.fury.io/js/generator-nodecli-awesome.svg)](https://badge.fury.io/js/generator-nodecli-awesome) [![Build Status](https://travis-ci.org/sebs/generator-nodecli-awesome.svg?branch=master)](https://travis-ci.org/sebs/generator-nodecli-awesome) [![npm](https://img.shields.io/npm/dt/generator-nodecli-awesome.svg?maxAge=2592000)]()
+
+
+
 A node.js cli app generator for [Yeoman](http://yeoman.io).
 
 * pure mocha tests
