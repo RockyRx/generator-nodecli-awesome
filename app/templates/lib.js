@@ -3,6 +3,14 @@ module.exports = function () {
   return {
     parse: function(program) {
       program = program;
+
+      function checkLenght(program) {
+        if(program.args[0].length > 4096) {
+          throw Error('input maxlength > 4096');
+        }
+        return program;
+      }
+
       var p = new Promise(function(resolve, reject) {
         if (program.args.length < 1) {
           var stdInData;
@@ -28,7 +36,7 @@ module.exports = function () {
           resolve(program)
         }
       });
-      return p;
+      return p.then(checkLenght);
     }
   }
 };
