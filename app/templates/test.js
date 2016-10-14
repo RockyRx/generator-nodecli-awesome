@@ -1,4 +1,4 @@
-var expect = require('chai').assert
+var assert = require('chai').assert
 var cli = require('..')();
 
 describe('<%= moduleName %>', function() {
