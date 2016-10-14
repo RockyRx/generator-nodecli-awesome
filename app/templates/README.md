@@ -9,11 +9,11 @@
 This module is installed via npm:
 
 ``` bash
-$ npm install <%= moduleName %>
+$ npm install <%= moduleName %> -g
 ```
 
 ## Example Usage
 
-``` js
-var <%= moduleVarName %> = require('<%= moduleName %>');
+``` bash
+<%= cliName %> -h
 ```

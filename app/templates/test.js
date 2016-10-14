@@ -1,4 +1,5 @@
-var assert = require('chai').assert
+'use strict';
+var assert = require('chai').assert;
 var cli = require('..')();
 
 describe('<%= moduleName %>', function() {
@@ -7,7 +8,6 @@ describe('<%= moduleName %>', function() {
     done();
   });
 
-  'use strict';
   const assert = require('chai').assert;
   var exec = require('child-process-promise').exec;
 
