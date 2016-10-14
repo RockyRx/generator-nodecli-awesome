@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "lint": "jshint lib test",
+    "lint": "jshint index.js test",
     "preversion": "npm run lint",
     "docs": "marked-man ./man/<%= cliName %>.md > ./man/<%= cliName %>.1",
     "postversion": "git push && git push --tags && npm run changelog && git push ",
