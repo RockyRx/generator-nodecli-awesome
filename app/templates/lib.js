@@ -3,15 +3,16 @@ module.exports = function () {
   return {
     parse: function(program) {
       program = program;
-
+      // a max lenght check makes sure, we are no involuntarily helper in a DOSs
       function checkLenght(program) {
         if(program.args[0].length > 4096) {
           throw Error('input maxlength > 4096');
         }
         return program;
       }
-
+      // since stdin is async anyway, I use a promise to make things simpler
       var p = new Promise(function(resolve, reject) {
+        // if we have noral parameters, ignore stdin
         if (program.args.length < 1) {
           var stdInData;
           process.stdin.setEncoding('utf8');
@@ -31,7 +32,6 @@ module.exports = function () {
               reject('no arguments');
             }
           });
-
         } else {
           resolve(program)
         }
