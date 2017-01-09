@@ -14,6 +14,7 @@ module.exports = generators.Base.extend({
     this.template('_package.json', 'package.json')
     this.copy('travis.yml', '.travis.yml')
     this.copy('gitignore', '.gitignore')
+    this.copy('jshint', '.jshint')
     this.copy('LICENSE', 'LICENSE')
     this.copy('CHANGELOG.md', 'CHANGELOG.md')
     this.template('README.md', 'README.md')
